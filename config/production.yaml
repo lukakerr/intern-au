@@ -2,10 +2,10 @@ web:
   app:
     cookie_domain: "localhost"
     session_secret: "neosl%$@gjrm*(gerg&"
-    session_database: "mongodb://localhost/intern_supply_session"
+    session_database: "mongodb://localhost/intern_au_session"
     root: "http://localhost:3001"
 
 database:
-  connection: "mongodb://localhost/intern_supply"
+  connection: "mongodb://localhost/intern_au"
   crypto:
     secret: "2nS&fdrSMcwamjTlpn*Qne7XxUUfxH37kOtaSp4bPyVdE0ChTR9wShcmtE5$m&%3"

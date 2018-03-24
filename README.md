@@ -24,9 +24,8 @@ To see the database with sample companies, run:
 $ coffee scripts/seed.coffee
 ```
 
-### Screenshots
+### Screenshot
 
 <p align="center">
-  <img src="https://i.imgur.com/uYZjTol.png" width="350">
-  <img src="https://i.imgur.com/2QsfeoT.png" width="350">
+  <img src="https://i.imgur.com/2QsfeoT.png">
 </p>

@@ -1,0 +1,27 @@
+.filter
+  text-align: center
+  margin: 20px 2em 40px 2em
+
+  .option
+    user-select: none
+    margin: 10px
+    border: 1px solid
+    border-radius: 4px
+    padding: 10px 20px
+    font-size: 18px
+    @media (hover: hover)
+      transition: .3s
+    cursor: pointer
+    font-weight: 600
+    display: inline-block
+
+    &.sydney
+      @include filter-color($red)
+    &.melbourne
+      @include filter-color($blue)
+    &.brisbane
+      @include filter-color($orange)
+    &.perth
+      @include filter-color($purple)
+    &.open
+      @include filter-color($green)

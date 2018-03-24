@@ -1,0 +1,35 @@
+// Circles shown on internships
+.circle
+  width: 20px
+  height: 20px
+  display: inline-block
+  border-radius: 50%
+  margin: 0 4px
+  &.sydney
+    background: $red
+  &.melbourne
+    background: $blue
+  &.brisbane
+    background: $orange
+  &.perth
+    background: $purple
+  &.open
+    background: $green
+  &.closed
+    position: relative
+    top: 1px
+    width: 17px
+    height: 17px
+    border: 1.5px solid $red
+    background: $clear
+    transform: rotate(10deg)
+    &:before
+      font-size: 23px
+      position: relative
+      top: -5px
+      left: 0.5px
+      color: $red
+      font-weight: 900
+      content: "/"
+      @media (max-width: 700px)
+        font-size: 24px

@@ -1,0 +1,25 @@
+.grid
+  margin: 0 10px 0 20px
+  text-align: center
+  display: inline-block
+  width: calc(33% - 30px)
+  @media (min-width: 1500px)
+    margin: 0 10px
+    width: calc(25% - 20px)
+  @media (max-width: 700px)
+    margin: 0 1em
+    width: calc(100% - 2em)
+
+  .content
+    padding: 1px
+    margin-bottom: 20px
+    background: $white
+    border-radius: 4px
+    color: $text
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.1)
+
+.grid-3
+  margin: 0 20px
+  text-align: center
+  display: inline-block
+  width: calc(33% - 40px)

@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  .search
+    h1.title Intern AU
+    input(name="query" placeholder="Search" autofocus)
+
+  .filter
+    span.option.open Open
+    span.option.sydney Sydney
+    span.option.melbourne Melbourne
+    span.option.brisbane Brisbane
+    span.option.perth Perth
+  
+  .companies
+    each internship, index in internships
+      .grid
+        .content
+          a(href=internship.url)
+            h3.company-name #{internship.company}
+          p.attributes
+            if internship.open
+              span.circle.open
+            else
+              span.circle.closed
+            case internship.location.toLowerCase()
+              when "sydney"
+                span.circle.sydney
+              when "melbourne"
+                span.circle.melbourne
+              when "brisbane"
+                span.circle.brisbane
+              when "perth"
+                span.circle.perth
+  
+  .key
+    p Open
+      span.circle.open
+    p Closed
+      span.circle.closed
+    p Sydney
+      span.circle.sydney
+    p Melbourne
+      span.circle.melbourne
+    p Brisbane
+      span.circle.brisbane
+    p Perth
+      span.circle.perth

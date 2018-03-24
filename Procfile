@@ -1,0 +1,1 @@
+web: cd assets && ./build.sh && cd ../ && coffee app.coffee

@@ -1,0 +1,13 @@
+web:
+  app:
+    cookie_domain: "localhost"
+    session_key: connect.sid.site
+    port: 3000
+    session_secret: "fglqpst$U#()Q_@s)(_*"
+    session_database: "mongodb://localhost/intern_au_session"
+    root: "http://localhost:3000"
+
+database:
+  connection: "mongodb://localhost/intern_au"
+  crypto:
+    secret: "2nS&fdrSMcwamjTlpn*Qne7XxUUfxH37kOtaSp4bPyVdE0ChTR9wShcmtE5$m&%3"

@@ -1,0 +1,10 @@
+@mixin filter-color($color)
+  border-color: $color
+  color: $color
+  &.pressed
+    background: $color
+    color: $background
+  @media (hover: hover)
+    &:hover
+      background: $color
+      color: $background

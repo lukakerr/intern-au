@@ -18,7 +18,7 @@ cd assets && ./build
 
 ### Seed Database
 
-To see the database with sample companies, run:
+To seed the database with sample companies, run:
 
 ```bash
 $ coffee scripts/seed.coffee
